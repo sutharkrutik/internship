@@ -1,0 +1,119 @@
+{% load static %}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #1b7895;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .profile-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .profile-card {
+            flex-basis: 300px;
+            background-color: #0cc0df;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 20px;
+            margin: 0 20px 20px 0;
+        }
+
+        .profile-card img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .profile-card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .profile-card p {
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            border: 1px solid black;
+            display: inline-block;
+            background-color: #d0efff;
+            color: black;
+            padding: 10px 20px;
+            border-color: black;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: #2a9df4;
+        }
+
+        .profile-summary {
+            height: 611px;
+            flex-basis: 370px;
+            background-color: #3a9bdc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+
+        .profile-summary ul {
+            list-style: none;
+        }
+
+        .profile-summary li {
+            margin-bottom: 20px;
+        }
+
+        .profile-summary h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .profile-summary p {
+            font-size: 16px;
+        }

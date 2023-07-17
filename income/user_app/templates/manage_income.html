@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>DATE</th>
+    <th>CATEGORY</th>
+    <th>ITEM</th>
+    <th>PRICE</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for a in M_I %}
+  <tr>
+    <td>{{a.id}}</td>
+    <td>{{a.date}}</td>
+    <td>{{a.category}}</td>
+    <td>{{a.item}}</td>
+    <td>{{a.price}}</td>
+
+    <td>
+      <a href="{% url 'edit_income' a.pk %}">Edit</a>
+      <a href="{% url 'delete_income' a.pk %}">Delete</a>
+    </td>
+
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>

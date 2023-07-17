@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}">
+</head>
+<body>
+<form  method="POST" >
+    {% csrf_token %}
+    <main>
+        <div class="profile-wrapper">
+            <div class="profile-card">
+                <img src="{% static 'images/user.png' %}" alt="Profile Picture">
+                <h2>Name: {{ user.username }}</h2>
+                <p>Email: {{ user.email }}</p>
+                <a href="{% url 'register' %}" class="btn">Edit Profile</a>
+                <a href="{% url 'home' %}" class="btn">Log Out</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Expense Tracker</p>
+    </footer>
+</form>
+</body>
+</html>

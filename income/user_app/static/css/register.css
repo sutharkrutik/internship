@@ -1,0 +1,94 @@
+{% load static %}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body
+{
+    font-size: 14px;
+    background: #1b7895;
+
+}
+.container
+{
+    background : #0cc0df;
+    width: 500px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 5px solid #d0efff;
+    border-bottom: 5px solid #d0efff;
+}
+.container h1
+{
+    font-size: 24px;
+    line-height: 24px;
+    padding: 30px;
+    text-align: center;
+}
+.input-name
+{
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+}
+.lock
+{
+    padding: 8px 11px;
+}
+.name
+{
+    width: 45%;
+    padding: 8px 0 8px 40px;
+
+}
+.input-name span
+{
+    margin-left: 35px;
+}
+.email
+{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+}
+.number
+{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+    /*border: 1px solid;*/
+    outline: none;
+}
+.input-name i
+{
+    position: absolute;
+    font-size: 18px;
+    color: #2a9df4;
+    border-right: 1px solid #cccccc;
+}
+.envelope
+{
+    padding: 8px;
+}
+.phone
+{
+    padding: 8px 10px;
+}
+.email,.name
+{
+    /*border: 1px solid #cccccc;*/
+    outline: none;
+}
+.button
+{
+    background-color:  #d0efff;
+    width: 100%;
+    padding: 10px;
+}
+.button:hover
+{
+    background-color:  #2a9df4;
+    color: black;
+    border-color: blue;
+}

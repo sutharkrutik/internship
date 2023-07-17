@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="{% static 'images/logo.png' %}" alt="Expense Tracker">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'about' %}">ABOUT</a></li>
+                    <li><a href="{% url 'contactus' %}">CONTACT</a></li>
+                    <li><a href="{% url 'login' %}">LOGIN</a></li>
+
+                </ul>
+                <div class="content">
+                    <h1>Welcome to MoneyTrackkerr<br><span> the best app for </span> <br>tracking expenses.</h1>
+                    <p class="par"><br>
+                        Manage Your Money Easily and Accurately
+                        <br>Have you become weary of trying to keep tabs on your spending and wondered <br>
+                        where your hard-earned money goes?<br>
+                        Look nowhere else! MoneyTrackker will transform the way you handle your money.
+                        <br>
+                        Monitor, evaluate, and improve your spending
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

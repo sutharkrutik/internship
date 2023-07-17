@@ -1,0 +1,50 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<h1>{{ error }}</h1>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <div class="form-container">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="User Name" name="username" class="email">
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="First Name" name="first_name" class="name">
+                    <span>
+                        <i class="fa fa-user lock"></i>
+                        <input type="text" placeholder="last Name" name="last_name" class="name">
+                    </span>
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-envelope envelope"></i>
+                    <input type="email" placeholder="Email-ID" name="email" class="email">
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="Password" name="password1" class="email">
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="Confirm Password" name="password2" class="email">
+                </div>
+                <div class="input-name">
+                    <input type="submit" class="button" value="REGISTER">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

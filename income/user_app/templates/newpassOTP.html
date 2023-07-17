@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/newpassOTP.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="main1">
+            <h1>Verify Your Email</h1>
+            <h6>Please check your mail that you have submitted earlier for reseting your password</h6>
+            <div class="main2">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="input-name">
+                        <i class="fa fa-envelope envelope"></i>
+                        <input type="phone number" placeholder="Enter Verification Code" class="name">
+                    </div>
+                    <div class="a1">
+                        <button class="button" value="verify" >VERIFY & CONTINUE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

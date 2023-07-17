@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css'%}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
+        <div class="about">
+            <div class="image-section">
+                <img src="{% static 'images/logo.png' %}" alt="">
+            </div>
+            <article>
+               <p> MoneyTrackker makes it simple to keep tabs on your spending, organise your transactions, and learn useful information
+                about your spending patterns. You can easily keep track of every dollar coming in and going out of your accounts thanks
+                to our user-friendly design and robust features. MoneyTrackr has you covered whether you're handling your personal money,
+                managing a small business, or creating a budget.
+
+                   <br><br> Begin your path to financial freedom right now!<br> <br>
+
+
+                Join the thousands of happy people who have used MoneyTrackr to get control over their spending.
+                It's time to reach your financial objectives, cut back on wasteful spending, and make plans for a better future.
+                Now that you have MoneyTrackr, you can start your path to financial freedom.</p>
+                <div class="button">
+                    <a href="{% url 'contactus'%}">Contact Us</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{% load static %}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    font-size: 14px;
+    background-color: #1b7895;
+}
+.container
+{
+    background : #0cc0df;
+    width: 500px;
+    padding: 25px;
+    margin-top: 10%;
+    margin-left: 34%;
+    border-top: 5px solid #d0efff;
+    border-bottom: 5px solid #d0efff;
+}
+.container h1
+{
+    font-size: 24px;
+    /*line-height: 24px;*/
+    padding: 30px;
+    text-align: center;
+}
+.input-name
+{
+    width: 90%;
+    /*position: relative;*/
+    margin: 20px auto;
+}
+.lock
+{
+    padding: 8px 11px;
+}
+.envelope
+{
+    padding: 8px;
+}
+.name
+{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+    outline: none;
+}
+.pass
+{
+    width: 100%;
+    padding: 8px 0 8px 40px;
+    outline: none;
+}
+.input-name i
+{
+    position: absolute;
+    font-size: 18px;
+    color: #2a9df4;
+    border-right: 1px solid #cccccc;
+}
+.button
+{
+    background-color: #d0efff;
+    color: black;
+    width: 45%;
+    padding: 10px;
+    margin-left: 10px;
+}
+.button:hover
+{
+    background-color: #2a9df4;
+    color: black;
+    border-color: blue;
+}
+.a1
+{
+    font-size: 20px;
+    text-align: center;
+}
+.a1 a{
+    color: #03254c;
+}
+.a1 :hover
+{
+    color: #d0efff;
+}
+

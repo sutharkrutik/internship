@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Income</title>
+</head>
+  <link rel="stylesheet" href="{% static 'css/income.css'%}">
+<body>
+  <div class="container">
+    <h2>Income Page</h2>
+    <form action="/user_app/update_income/{{object.id}}" method="POST">
+      {% csrf_token %}
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" value="{{object.date}}" required>
+
+      <label for="category">Category:</label>
+      <input type="text" id="category" name="category" value="{{object.category}}" required>
+
+      <label for="item">Item:</label>
+      <input type="text" id="item" name="item" value="{{object.item}}" required>
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" step="0.01" value="{{object.price}}" required>
+
+      <input type="submit" value="Update"/>
+    </form>
+  </div>
+</body>
+</html>
